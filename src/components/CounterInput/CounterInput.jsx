@@ -24,13 +24,13 @@ const CounterInput = () => {
         <span>{step}</span>
       </div>
       <div>
-        <button onClick={() => setCounterInput((s) => s - 1)}>-</button>
+        <button onClick={() => setCounterInput((s) => s - step)}>-</button>
         <input
           type="text"
           value={counterInput}
           onChange={(e) => setCounterInput(Number(e.target.value))}
         />
-        <button onClick={() => setCounterInput((s) => s + 1)}>+</button>
+        <button onClick={() => setCounterInput((s) => s + step)}>+</button>
       </div>
       <p>
         <span>
@@ -55,3 +55,4 @@ const CounterInput = () => {
 };
 
 export default CounterInput;
+// 7/79
